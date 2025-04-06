@@ -1,0 +1,85 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 300px minmax(calc(1080px - 300px), 1fr);
+}
+
+nav.dashboard {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 100vh;
+    background-color: #1992d4;
+    grid-row: 1 / span 2;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+nav.dashboard ul.list-container {
+    display: grid;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.nav-item-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.nav-item-container>.text {
+    grid-column: 2 / 3;
+    grid-row-start: 1;
+}
+
+.nav-item-container>.icon {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    justify-self: center;
+}
+
+li.gap {
+    padding-top: 1.5rem;
+}
+
+li.top .text {
+    font-size: 1.9rem;
+}
+
+li.top .material-symbols-outlined {
+    font-size: 48px;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'OPSZ' 48;
+}
+
+:not(.top) .material-symbols-outlined {
+    font-size: 24px;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'OPSZ' 24;
+}
+
+nav a:hover {
+    background-color: #48ACF0;
+}
+
+.mainbar {
+    background-color: #e2e8f0;
+}

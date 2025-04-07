@@ -78,6 +78,126 @@ nav a:hover {
     background-color: #48ACF0;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 25px 50px;
+    align-items: center;
+    font-weight: bolder;
+    row-gap: 1rem;
+}
+
+header search {
+    grid-column: 1 / span 2;
+}
+
+header .search-container {
+    padding-right: 1rem;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content;
+    column-gap: 2rem;
+}
+
+header .search-container>* {
+    grid-row-start: 1;
+}
+
+header .search-container button {
+    all: unset;
+}
+
+header .search-container button:focus {
+    outline: revert;
+}
+
+header .search-container button:hover {
+    cursor: pointer;
+}
+
+header .search-container input {
+    border: none;
+    border-radius: 2em;
+    background-color: #e2e8f0;
+    grid-column-start: 2;
+}
+
+header .profile {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    justify-self: end;
+    column-gap: 2rem;
+
+    font-size: 1.1rem;
+}
+
+header .profile .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0;
+}
+
+header .user-intro {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.user-intro .avatar {
+    grid-row: 1 / span 2;
+}
+
+.user-intro .greetings {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size: small;
+    align-self: end;
+}
+
+.user-intro .username {
+    grid-row-start: 2;
+    font-size: 1.4rem;
+    align-self: start;
+}
+
+header .post-actions {
+    justify-self: end;
+    grid-row-start: 2;
+    grid-column-start: 2 / 4;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.post-actions button {
+    background-color: #48ACF0;
+    border: none;
+    border-radius: 2rem;
+    padding: 10px 30px;
+    color: white;
+}
+
+.avatar {
+    border: none;
+    border-radius: 50%;
+    height: auto;
+}
+
+.avatar.smaller {
+    width: 3rem;
+}
+
+.avatar.bigger {
+    width: 4.5rem;
+}
+
+header .post-actions {
+    grid-column-start: 3;
+}
+
 .mainbar {
     background-color: #e2e8f0;
 }

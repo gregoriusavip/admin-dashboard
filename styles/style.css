@@ -32,31 +32,31 @@ nav.dashboard ul.list-container {
     row-gap: 1.5rem;
 }
 
-.nav-item-container {
+nav .item-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
     column-gap: 20px;
     align-items: center;
 }
 
-.nav-item-container>.text {
+nav .item-container>.text {
     grid-column: 2 / 3;
     grid-row-start: 1;
 }
 
-.nav-item-container>.icon {
+nav .item-container>.icon {
     justify-self: center;
 }
 
-li.gap {
+nav li.gap {
     padding-top: 1.5rem;
 }
 
-li.top .text {
+nav li.top .text {
     font-size: 1.9rem;
 }
 
-li.top .material-symbols-outlined {
+nav .top .material-symbols-outlined {
     font-size: 48px;
     font-variation-settings:
         'FILL' 1,
@@ -65,7 +65,7 @@ li.top .material-symbols-outlined {
         'OPSZ' 48;
 }
 
-nav .material-symbols-outlined :not(.top) {
+nav li:not(.top) .material-symbols-outlined {
     font-size: 24px;
     font-variation-settings:
         'FILL' 1,

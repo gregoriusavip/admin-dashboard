@@ -65,7 +65,7 @@ li.top .material-symbols-outlined {
         'OPSZ' 48;
 }
 
-:not(.top) .material-symbols-outlined {
+nav :not(.top) .material-symbols-outlined {
     font-size: 24px;
     font-variation-settings:
         'FILL' 1,
@@ -94,10 +94,9 @@ header search {
 }
 
 header .search-container {
-
     display: grid;
     align-items: center;
-    grid-template-columns: max-content;
+    grid-template-columns: max-content 1fr;
     column-gap: 2rem;
 }
 
@@ -107,6 +106,7 @@ header .search-container>* {
 
 header .search-container button {
     all: unset;
+    height: 24px;
 }
 
 header .search-container button:focus {

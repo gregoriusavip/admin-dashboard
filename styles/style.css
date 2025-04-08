@@ -65,7 +65,7 @@ li.top .material-symbols-outlined {
         'OPSZ' 48;
 }
 
-nav :not(.top) .material-symbols-outlined {
+nav .material-symbols-outlined :not(.top) {
     font-size: 24px;
     font-variation-settings:
         'FILL' 1,

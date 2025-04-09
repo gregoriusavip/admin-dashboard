@@ -211,8 +211,9 @@ main .projects {
     grid-row: 1 / span 2;
 
     display: grid;
-    grid-template-rows: min-content;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
     column-gap: 1.5rem;
     row-gap: 1.5rem;
 }
@@ -231,6 +232,15 @@ main article.project {
     padding: 2rem 1rem;
 
     display: grid;
+    grid-template-rows: max-content;
+}
+
+main article.project h1 {
+    align-self: end;
+}
+
+main article.project p {
+    align-self: start;
 }
 
 main article.project .icons {
